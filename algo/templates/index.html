@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Zone</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4a6fa5;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .chat-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+
+        .chat-box {
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 18px;
+            max-width: 70%;
+        }
+
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+
+        .bot-message {
+            background-color: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #3a5a80;
+        }
+
+        .sentiment-display {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f0f7ff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #sentiment-indicator {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comfort Zone</h1>
+        <p class="subtitle">Share how you're feeling, and I'll respond with care</p>
+        
+        <div class="chat-container">
+            <div id="chat-box" class="chat-box"></div>
+            
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="How are you feeling today?">
+                <button id="send-btn">Send</button>
+            </div>
+            
+            <div class="sentiment-display">
+                <p>Current mood: <span id="sentiment-indicator">unknown</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatBox = document.getElementById('chat-box');
+            const userInput = document.getElementById('user-input');
+            const sendBtn = document.getElementById('send-btn');
+            const sentimentIndicator = document.getElementById('sentiment-indicator');
+            
+            // Add message to chat box
+            function addMessage(text, isUser) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                messageDiv.classList.add(isUser ? 'user-message' : 'bot-message');
+                messageDiv.textContent = text;
+                chatBox.appendChild(messageDiv);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+            
+            // Analyze user input and get response
+            async function analyzeInput() {
+                const text = userInput.value.trim();
+                if (!text) return;
+                
+                addMessage(text, true);
+                userInput.value = '';
+                
+                try {
+                    const response = await fetch('/analyze', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ message: text })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    // Update sentiment indicator
+                    sentimentIndicator.textContent = data.sentiment;
+                    sentimentIndicator.style.color = 
+                        data.sentiment === 'sad' ? '#d32f2f' : 
+                        data.sentiment === 'happy' ? '#388e3c' : '#1976d2';
+                    
+                    // Add bot response
+                    setTimeout(() => {
+                        addMessage(data.response, false);
+                    }, 500);
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    addMessage("I'm having trouble understanding. Can you try again?", false);
+                }
+            }
+            
+            // Event listeners
+            sendBtn.addEventListener('click', analyzeInput);
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') analyzeInput();
+            });
+            
+            // Initial greeting
+            setTimeout(() => {
+                addMessage("Hello! How are you feeling today?", false);
+            }, 500);
+        });
+    </script>
+</body>
+</html>

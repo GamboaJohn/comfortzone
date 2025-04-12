@@ -1,0 +1,161 @@
+{
+  "responses": {
+    "sad": [
+      "Your sadness is a testament to how deeply you feel—that’s a gift, even when it hurts.",
+      "It’s okay to sit with this feeling for a while. I’ll sit with you.",
+      "The weight you carry is heavy, but you don’t have to carry it alone.",
+      "Tears water the soil of the soul. Let them fall.",
+      "You’ve survived 100% of your hardest days so far. This one won’t break you.",
+      "Some days the only victory is getting through them. And that’s enough.",
+      "The stars shine brightest against the darkest skies. Your light isn’t gone.",
+      "Would it help to share what’s weighing on your heart? I’m listening.",
+      "Grief is love with nowhere to go. It honors what matters to you.",
+      "Tomorrow is a fresh page. For today, just breathe."
+    ],
+    "happy": [
+      "Your happiness is a melody—thank you for letting me hear its music!",
+      "This joy you feel? It’s your soul doing a happy dance. Keep grooving!",
+      "The world needs more of this radiant energy you’re putting out!",
+      "Moments like these are why we endure the hard times. Soak it in!",
+      "Your smile could power a thousand suns. Shine on!",
+      "Happiness looks good on you—wear it often and without apology!",
+      "What’s one thing making you smile today? Let’s celebrate it together!",
+      "Joy shared is joy multiplied—thank you for spreading the light!",
+      "This is the you I love to see: unguarded and glowing.",
+      "Your happiness is contagious in the best possible way!"
+    ],
+    "tired": [
+      "Rest is resistance in a world that prizes endless hustle. Resist beautifully.",
+      "Your exhaustion isn’t failure—it’s evidence of how much you’ve given.",
+      "Imagine your energy as a cup. Right now, it’s time to refill, not pour out.",
+      "The most productive thing you can do today might be absolutely nothing.",
+      "Trees don’t apologize for shedding leaves in autumn. Don’t apologize for needing rest.",
+      "You’re not lazy—you’re in recovery. Recovery is sacred work.",
+      "Close your eyes. Imagine handing your weariness to the sky. What’s left feels lighter.",
+      "Your body is whispering its needs. What small act of kindness can you offer it today?",
+      "The world will still be here after you pause. It can wait.",
+      "Tomorrow’s strength grows in today’s stillness."
+    ],
+    "anxious": [
+      "Your anxiety is a smoke alarm for perceived danger. Right now? There’s no fire.",
+      "Name five textures around you. Sometimes the present needs our full attention.",
+      "This feeling is a wave—it will crest, then recede. You’ve ridden waves before.",
+      "Your mind is a storyteller spinning ‘what if’ tales. Which story feels truest?",
+      "Breathe in: ‘This moment’. Breathe out: ‘Is temporary’.",
+      "Anxiety shrinks when we name it. Try: ‘Hello again, old frenemy.’",
+      "You’re not trapped in this feeling—you’re moving through it, step by step.",
+      "What color is calm to you? Imagine painting today with that hue.",
+      "The future hasn’t happened yet. Here, now, you’re okay.",
+      "Your courage isn’t the absence of fear—it’s feeling it and continuing anyway."
+    ],
+    "angry": [
+      "Anger is often the bodyguard of hurt. What’s it protecting right now?",
+      "Your fury contains important data about your boundaries. Listen to its wisdom.",
+      "Before reacting, try this: Clench every muscle for 10 seconds, then release.",
+      "This heat in your chest? It’s power waiting for direction. How will you channel it?",
+      "Write it all down—then burn the paper. Watch the anger transform to smoke and ash.",
+      "You’re allowed to be furious and still act with intention. What does that look like?",
+      "Anger is energy. Could a sprint, scream into a pillow, or furious doodling help?",
+      "Underneath this anger, what softer feeling might need acknowledgment?",
+      "Your anger matters, but it doesn’t get to drive the car. You’re still in control.",
+      "This too shall pass—but first, it’s okay to let it teach you something."
+    ],
+    "neutral": [
+      "Not every day needs fireworks. Ordinary moments grow extraordinary lives.",
+      "How’s today treating that beautiful mind of yours? Really, tell me.",
+      "Inhale the present. Exhale expectations. Repeat as needed.",
+      "What’s one small pleasure you’ve noticed today? A scent? A sound?",
+      "Neutral days are the blank pages between chapters—necessary and good.",
+      "If today were a weather pattern, what would it be? I’m here to witness it.",
+      "No need to perform feelings. Just be. I’ll be here with you.",
+      "Quiet emotions deserve space too. This is a no-judgment zone.",
+      "What does your body need right now? A stretch? A snack? A pause?",
+      "The poetry of ordinary days often goes unnoticed. What’s your today-poem?"
+    ],
+    "excited": [
+      "Your excitement is electric—I can feel it from here!",
+      "Tell me everything! What’s sparking this brilliant energy?",
+      "This is the kind of enthusiasm that changes worlds. Ride the wave!",
+      "Your anticipation is delicious—savor every drop of it!",
+      "Excitement this pure is rare and sacred. Let it fill you up!",
+      "I’d bottle this energy if I could—it’s that inspiring!",
+      "Whatever’s got you buzzing? It’s lucky to have your passion behind it.",
+      "Your joy is a spotlight—it shows us all what matters most.",
+      "This is the you that makes the universe lean in and smile.",
+      "Don’t temper this fire—let it roar!"
+    ],
+    "overwhelmed": [
+      "Overwhelm is just data—it’s telling you the load exceeds capacity. Let’s adjust.",
+      "Pick one tiny corner of this to start with. I’ll hold the rest for now.",
+      "Your plate isn’t just full—it’s overflowing. What can we remove together?",
+      "Imagine future-you looking back on this. What would they tell you right now?",
+      "You’re not failing—you’re being asked to scale an impossible mountain without gear.",
+      "List three things that feel manageable today. Let’s start there.",
+      "This feeling is temporary. Your strength is not.",
+      "What’s one thing you could delegate, delay, or delete entirely?",
+      "You’re a human being, not a human doing. That’s enough.",
+      "Breathe in: ‘I don’t have to solve everything today.’ Breathe out: ‘Just the next right step.’"
+    ],
+    "discouraged": [
+      "Disappointment is the gap between expectation and reality. Let’s bridge it gently.",
+      "Every masterpiece has messy drafts. This is just your draft phase.",
+      "What if this isn’t failure, but necessary friction for growth?",
+      "You’re allowed to mourn what you hoped for while making space for what’s next.",
+      "The seeds of resilience are often planted in these discouraged moments.",
+      "Compare yourself to who you were yesterday, not to others’ highlight reels.",
+      "This feeling is fertilizer for your next breakthrough—unpleasant but nourishing.",
+      "List three small wins from this week. I’ll start: You’re still showing up. That’s one.",
+      "Your path isn’t linear. Today’s dip is just preparing you for the next ascent.",
+      "Even rocks erode under pressure—yet they become stunning canyons in time."
+    ],
+    "lonely": [
+      "Loneliness is the hunger pang of the heart—it reminds us we’re made for connection.",
+      "You’re alone right now, but you’re not alone in feeling this way.",
+      "Reach out your hand—metaphorically or literally. Someone will grasp it.",
+      "The people who love you would hate knowing you feel this unseen.",
+      "Loneliness carves out hollows in us—but hollows are where echoes sing most beautifully.",
+      "You’re a constellation of all who’ve loved you. Their light still shines in you.",
+      "What’s one tiny way to connect today? A text? A smile at a stranger? A shared meme?",
+      "This ache proves your enormous capacity for love. That’s a rare gift.",
+      "The moon is alone too, yet it pulls entire oceans. Your influence remains.",
+      "You belong to the human family—even when the house feels empty."
+    ],
+    "insecure": [
+      "Your self-doubt is a clumsy bodyguard trying to protect you from failure by preventing trying.",
+      "List three things you’ve survived that once seemed impossible. You’re stronger than you know.",
+      "What would you tell your dearest friend if they voiced this insecurity? Tell yourself that.",
+      "You’re comparing your behind-the-scenes to everyone else’s highlight reel. It’s not a fair fight.",
+      "Insecurity is often the growing pains of evolving into someone new.",
+      "You don’t have to be flawless to be worthy. Messy is where the magic happens.",
+      "The parts of you that feel unworthy? They’re the ones most in need of your love.",
+      "Your perceived flaws are often just the unique contours that make you, you.",
+      "Confidence isn’t the absence of doubt—it’s hearing the doubt and continuing anyway.",
+      "You’re a work in progress—which means you’re exactly where you’re meant to be."
+    ],
+    "grateful": [
+      "Gratitude is alchemy—it transforms ordinary moments into golden memories.",
+      "Your thankfulness is a beacon—it guides more goodness to you.",
+      "What’s one tiny blessing you might have overlooked today? The smell of coffee? A deep breath?",
+      "Gratitude isn’t just an emotion—it’s a revolutionary way of seeing the world.",
+      "Your appreciation creates ripples that return to you in unexpected ways.",
+      "Joy grows in the soil of gratitude. Keep tending your garden.",
+      "Thank you for pausing to notice the good—it reminds us all to do the same.",
+      "Gratitude is the heart’s memory. Yours is clearly keeping beautiful records.",
+      "What if you wrote yourself a thank-you note for something you did today?",
+      "This thankful heart of yours? It’s your superpower."
+    ]
+  },
+  "sentiment_keywords": {
+    "sad": ["sad", "down", "unhappy", "miserable", "heartbroken", "grief", "sorrowful", "gloomy", "melancholy", "blue", "despondent", "tearful", "crying", "lost", "empty"],
+    "happy": ["happy", "joy", "excited", "great", "wonderful", "awesome", "fantastic", "delighted", "cheerful", "pleased", "content", "blissful", "merry", "jubilant", "thrilled", "radiant"],
+    "tired": ["tired", "exhausted", "fatigued", "drained", "weary", "sleepy", "burned out", "spent", "depleted", "drowsy", "lethargic", "worn out", "beat", "running on empty", "zombie"],
+    "anxious": ["anxious", "nervous", "worried", "stressed", "panicked", "apprehensive", "tense", "uneasy", "frightened", "fearful", "concerned", "jittery", "on edge", "overthinking", "doom-spiral"],
+    "angry": ["angry", "mad", "furious", "irritated", "annoyed", "frustrated", "enraged", "resentful", "indignant", "irate", "heated", "seething", "exasperated", "seeing red", "boiling"],
+    "excited": ["excited", "thrilled", "pumped", "eager", "enthusiastic", "elated", "animated", "energized", "exhilarated", "ecstatic", "passionate", "buzzing", "electric", "fired up", "giddy"],
+    "overwhelmed": ["overwhelmed", "swamped", "buried", "snowed under", "drowning", "overloaded", "inundated", "flooded", "stretched thin", "at my limit", "can't cope", "drowning", "sinking", "burnt out"],
+    "discouraged": ["discouraged", "disappointed", "hopeless", "disheartened", "defeated", "demoralized", "deflated", "dispirited", "let down", "crestfallen", "gutted", "lost hope", "ready to quit"],
+    "lonely": ["lonely", "alone", "isolated", "abandoned", "forgotten", "disconnected", "solitary", "excluded", "neglected", "invisible", "left out", "unseen", "unwanted", "outcast"],
+    "insecure": ["insecure", "inadequate", "unworthy", "inferior", "self-doubt", "unconfident", "uncertain", "unsure", "not good enough", "flawed", "impostor", "fraud", "self-conscious", "small"],
+    "grateful": ["grateful", "thankful", "appreciative", "blessed", "fortunate", "content", "satisfied", "lucky", "indebted", "humbled", "moved", "touched", "heartfull", "abundance"]
+  }
+}
